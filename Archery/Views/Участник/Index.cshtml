@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Archery.Models.Участник>
+
+@{
+    ViewBag.Title = "Участники";
+}
+
+<h2>Участники</h2>
+
+<p>
+    @Html.ActionLink("Добавить нового участника", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("ФИО участника")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ФИО)
+            </td>
+            <td>
+                @Html.ActionLink("Редактировать", "Edit", new { id = item.ID_участника }) |
+                @Html.ActionLink("Тренера", "Details", new { id = item.ID_участника }) |
+                @Html.ActionLink("Разряды", "Razryad", new { id = item.ID_участника }) |
+                @Html.ActionLink("Удалить", "Delete", new { id = item.ID_участника })
+            </td>
+        </tr>
+    }
+
+</table>

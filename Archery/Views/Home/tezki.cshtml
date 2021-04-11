@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Archery.Models.tezki>
+
+@{
+    ViewBag.Title = "Тезки участников";
+}
+
+<h2>Участники, у которых есть тезки среди судей и тренеров</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Фамилия и имя участника")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ФИО)
+            </td>
+        </tr>
+    }
+</table>
+<p><a href="/Home">Назад</a></p>

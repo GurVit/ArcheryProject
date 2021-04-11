@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Archery.Models.Тренер>
+
+@{
+    ViewBag.Title = "Тренеры";
+}
+
+<h2>Тренеры</h2>
+
+<p>
+    <a href="/Тренер/Create">Добавить</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("ФИО тренера")
+        </th>
+        <th>
+            @Html.DisplayName("Тренерское звание")
+        </th>
+        <th>
+            @Html.DisplayName("Клуб")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ФИО)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Тренерское_звание.Наименование)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Клуб.Наименование)
+            </td>
+            <td>
+                @Html.ActionLink("Редактировать", "Edit", new { id = item.ID_тренера }) |
+                @Html.ActionLink("Удалить", "Delete", new { id = item.ID_тренера }) |
+                @Html.ActionLink("Показать участников", "Details", new { id = item.ID_тренера })
+            </td>
+        </tr>
+    }
+
+</table>
+<dr>
+    <dd><p><a href="/Home">Назад</a></p></dd>
+</dr>

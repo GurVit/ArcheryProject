@@ -1,0 +1,49 @@
+﻿@model Archery.Models.Тренер
+
+@{
+    ViewBag.Title = "Удалить запись о тренере";
+}
+
+<h2>Удалить запись</h2>
+
+<h3>Вы уверены, что хотите удалить эту запись?</h3>
+<div>
+    <h4>Тренер</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Клуб")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Клуб.Наименование)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Звание")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Тренерское_звание.Наименование)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("ФИО")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ФИО)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-default" /> |
+            @Html.ActionLink("Назад", "Index")
+        </div>
+    }
+</div>

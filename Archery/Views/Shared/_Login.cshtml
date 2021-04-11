@@ -1,0 +1,17 @@
+﻿
+@if (User.Identity.IsAuthenticated)
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @Html.ActionLink(User.Identity.Name, null)
+        </li>
+        <li>@Html.ActionLink("Выйти", "Logoff", "Account")</li>
+    </ul>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Регистрация", "Register", "Account")</li>
+        <li>@Html.ActionLink("Выполнить вход", "Login", "Account")</li>
+    </ul>
+}

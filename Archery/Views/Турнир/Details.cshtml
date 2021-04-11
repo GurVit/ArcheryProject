@@ -1,0 +1,90 @@
+﻿@model Archery.Models.Турнир
+@{ string gender = "";}
+@{
+    ViewBag.Title = "Детали турнира";
+}
+
+<h2>Дисциплины</h2>
+
+<div>
+    <h4>Турнир</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Наименование")
+        </dt>
+
+        <dd>
+            @ViewBag.TurnirName
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Год проведения")
+        </dt>
+
+        <dd>
+            @ViewBag.TurnirYear
+        </dd>
+
+    </dl>
+    <h4>
+        @Html.DisplayName("Список дисциплин")
+    </h4>
+    <p>
+        @Html.ActionLink("Добавить новую дисциплину", "DisciplinaCreate", new { id = ViewBag.TurnirID })
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayName("Дивизион")
+            </th>
+            <th>
+                @Html.DisplayName("Дистанция")
+            </th>
+            <th>
+                @Html.DisplayName("Мужщины/женщины")
+            </th>
+            <th>
+                @Html.DisplayName("Судья")
+            </th>
+            <th>
+                @Html.DisplayName("Имя")
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Дисциплина_в_турнире)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Дисциплина.Дивизион.Наименование)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Дисциплина.Дистанция.Дистанция__м)
+                </td>
+                <td>
+                    @{
+                        switch (item.Дисциплина.Мужчины_женщины)
+                        {
+                            case true:
+                                gender = "Мужчины";
+                                break;
+                            case false:
+                                gender = "Женщины";
+                                break;
+                        }
+                    }
+                    @gender
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Судья.ФИО)
+                </td>
+                <td>
+                    @Html.ActionLink("Список участников", "DisciplinaDetails", new { id1 = item.Мужчины_женщины, id2 = item.Код_дивизиона, id3 = item.Код_дистанции, id4 = ViewBag.TurnirID })
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Назад", "Index")
+</p>

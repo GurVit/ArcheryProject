@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Archery.Models.ArcheryContext">
+    <Position X="1.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAJAIAAIAAAAAAAAAIAQAAAEIAAAQECAAxAEAAwAJg=</HashCode>
+      <FileName>Models\ArcheryContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.pobeditel">
+    <Position X="3.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAERAAAEAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\pobeditel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.LoginModel">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\register.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.RegisterModel">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\register.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.sysdiagrams">
+    <Position X="10.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAIAAAAAAAAAAAAAAAQAAAFAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\sysdiagrams.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.tezki">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEBAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\tezki.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.User">
+    <Position X="8.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Дивизион">
+    <Position X="3.25" Y="5.25" Width="1.5" />
+    <InheritanceLine Type="System.Object" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="7.7" />
+        <Point X="14.5" Y="8.09" />
+        <Point X="4" Y="8.09" />
+        <Point X="4" Y="7.19" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAACAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Дивизион.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Дистанция">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="System.Object" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="5.25" />
+        <Point X="14.5" Y="2.75" />
+        <Point X="9.5" Y="2.75" />
+        <Point X="9.5" Y="2.44" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Models\Дистанция.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Дисциплина">
+    <Position X="10.25" Y="5.25" Width="1.5" />
+    <InheritanceLine Type="System.Object" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="7.7" />
+        <Point X="14.5" Y="8.09" />
+        <Point X="11" Y="8.09" />
+        <Point X="11" Y="7.767" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAICCAAAAAAAAAQAAAAAAAAAAAIABAAAAAAAA=</HashCode>
+      <FileName>Models\Дисциплина.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Дисциплина_в_турнире">
+    <Position X="10.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAACCAAAAAAAIAAAAAAIgAAAEAIAgAAAgAAAA=</HashCode>
+      <FileName>Models\Дисциплина_в_турнире.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.История_получения_разряда">
+    <Position X="5" Y="5.25" Width="1.5" />
+    <InheritanceLine Type="System.Object" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="7.7" />
+        <Point X="14.5" Y="8.09" />
+        <Point X="5.75" Y="8.09" />
+        <Point X="5.75" Y="7.123" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEIAAAAAEAAAAAAAggAA=</HashCode>
+      <FileName>Models\История_получения_разряда.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Клуб">
+    <Position X="6.75" Y="5.25" Width="1.5" />
+    <InheritanceLine Type="System.Object" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="7.7" />
+        <Point X="14.5" Y="8.09" />
+        <Point X="7.5" Y="8.09" />
+        <Point X="7.5" Y="7.19" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAIAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Models\Клуб.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Нарушение">
+    <Position X="6.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACCAAAAAAAICAAAAEAgAAgAAIAAAIgAAAAA=</HashCode>
+      <FileName>Models\Нарушение.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Результат_стрельбы_У_в_серии_Д">
+    <Position X="8.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAgCCAEAAAAAIAAAAAEAgAAAAAIAAAAgAAAAA=</HashCode>
+      <FileName>Models\Результат_стрельбы_У_в_серии_Д.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Спортивный_разряд">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAEAAQAAAAAAAA=</HashCode>
+      <FileName>Models\Спортивный_разряд.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Судья">
+    <Position X="8.5" Y="5.25" Width="1.5" />
+    <InheritanceLine Type="System.Object" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="7.7" />
+        <Point X="14.5" Y="8.09" />
+        <Point X="9.25" Y="8.09" />
+        <Point X="9.25" Y="7.767" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAEBAAAMAAAAAAAAAAAABAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Models\Судья.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Тренер">
+    <Position X="12" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEBIAAEAAAABACAAAAABAAAAAAAAAAAAAAAgAQABA=</HashCode>
+      <FileName>Models\Тренер.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Тренерское_звание">
+    <Position X="12" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAIAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Models\Тренерское_звание.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Турнир">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="System.Object" ManuallyRouted="true">
+      <Path>
+        <Point X="14.5" Y="5.25" />
+        <Point X="14.5" Y="2.75" />
+        <Point X="7.5" Y="2.75" />
+        <Point X="7.5" Y="2.632" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAIAAAAAAAIAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Турнир.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Участник">
+    <Position X="3.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEBIAAEAAAAAAAAAAAABAAEAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Models\Участник.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Участник_в_дисциплине_турнира">
+    <Position X="5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAICCAAAAAAAAAAAAAEAgAAQAAIAAAAgAAAIA=</HashCode>
+      <FileName>Models\Участник_в_дисциплине_турнира.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archery.Models.Участник_у_тренера">
+    <Position X="12" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAIAAAAAEIAAAQAAAAQAAgAAAAA=</HashCode>
+      <FileName>Models\Участник_у_тренера.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FormsAuthApp.Controllers.AccountController">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAQgAAAAAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archer.Controllers.HomeController">
+    <Position X="15.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAACAAEAAAAAAAg=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archers.Controllers.ТренерController">
+    <Position X="15.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAMAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ТренерController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archers.Controllers.УчастникController">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAEEAAAAAAAA=</HashCode>
+      <FileName>Controllers\УчастникController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсовой_проект.Controllers.ТурнирController">
+    <Position X="17.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAARAAAAAAAAAAAACAAAACAAAAEAAAAAAAI=</HashCode>
+      <FileName>Controllers\ТурнирController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="13.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Data.Entity.DbContext" Collapsed="true">
+    <Position X="1.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Orientation="Bottom" Position="0.2" />
+  </Class>
+  <Class Name="System.Web.Mvc.Controller" Collapsed="true">
+    <Position X="17.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Orientation="Bottom" Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

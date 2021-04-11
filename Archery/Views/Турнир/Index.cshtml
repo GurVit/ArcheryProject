@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Archery.Models.Турнир>
+
+@{
+    ViewBag.Title = "Турниры";
+}
+
+<h2>Список турниров</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Наименование)
+        </th>
+        <th>
+            @Html.DisplayName("Год проведения")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Наименование)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Год_проведения)
+            </td>
+            <td>
+                @Html.ActionLink("Детали турнира", "Details", new { id = item.ID_турнира })
+            </td>
+        </tr>
+    }
+</table>
+<dr>
+    <dd><p><a href="/Home">Назад</a></p></dd>
+</dr>

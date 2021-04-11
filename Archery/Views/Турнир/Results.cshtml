@@ -1,0 +1,97 @@
+﻿@model Archery.Models.Участник_в_дисциплине_турнира
+@{
+    ViewBag.Title = "Результаты";
+    string gender = "";
+}
+
+<h2>Результаты участника</h2>
+
+<div>
+    <h4>Турнир</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("ФИО")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Участник_у_тренера.Участник.ФИО)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Дивизион")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Дисциплина_в_турнире.Дисциплина.Дивизион.Наименование)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Дистанция")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Дисциплина_в_турнире.Дисциплина.Дистанция.Дистанция__м)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("М/Ж")
+        </dt>
+
+        <dd>
+            @{
+                switch (ViewBag.Gender)
+                {
+                    case true:
+                        gender = "Мужчины";
+                        break;
+                    case false:
+                        gender = "Женщины";
+                        break;
+                }
+            }
+            @gender
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Итого очков")
+        </dt>
+
+        <dd>
+            @ViewBag.Результат
+        </dd>
+    </dl>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayName("Серия")
+            </th>
+            <th>
+                @Html.DisplayName("Номер стрелы")
+            </th>
+            <th>
+                @Html.DisplayName("Количество очков")
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Результат_стрельбы_У_в_серии_Д)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Серия)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Номер_стрелы)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Количество_очков)
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Назад", "DisciplinaDetails", new { id1 = Model.Мужчины_женщины, id2 = Model.Код_дивизиона, id3 = Model.Код_дистанции, id4 = Model.ID_турнира })
+</p>
+

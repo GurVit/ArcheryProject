@@ -1,0 +1,75 @@
+﻿@model Archery.Models.Тренер
+
+@{
+    ViewBag.Title = "Участники";
+}
+
+<h2>Участники</h2>
+
+<div>
+    <h4>Тренер</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Клуб")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Клуб.Наименование)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Тренерское звание")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Тренерское_звание.Наименование)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("ФИО")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ФИО)
+        </dd>
+    </dl>
+    <h4>
+        @Html.DisplayName("Участники")
+    </h4>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayName("Дата прибытия")
+            </th>
+            <th>
+                @Html.DisplayName("Дата ухода")
+            </th>
+            <th>
+                @Html.DisplayName("Участник")
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Участник_у_тренера)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Дата_прихода)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Дата_ухода)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Участник.ФИО)
+                </td>
+                <td>
+                    @Html.ActionLink("Сведения", "UchastnikDetails", new { id = item.ID_участника })
+                </td>
+            </tr>
+        }
+    </table>
+
+</div>
+<p>
+    @Html.ActionLink("Назад", "Index")
+</p>

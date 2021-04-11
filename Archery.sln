@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archery", "Archery\Archery.csproj", "{B93D069A-03C3-4D30-8BB8-DB6E4A074995}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B93D069A-03C3-4D30-8BB8-DB6E4A074995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93D069A-03C3-4D30-8BB8-DB6E4A074995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93D069A-03C3-4D30-8BB8-DB6E4A074995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93D069A-03C3-4D30-8BB8-DB6E4A074995}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D10EE051-8955-435F-85CB-003122A84064}
+	EndGlobalSection
+EndGlobal
